@@ -1,0 +1,5 @@
+::ng-deep .p-card-header {
+  background-color: #e3f2fd;
+  padding: 0.75rem;
+  border-radius: 4px 4px 0 0;
+}
