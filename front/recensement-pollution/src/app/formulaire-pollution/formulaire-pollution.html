@@ -43,7 +43,7 @@
                         <div>
                             <p-inputnumber name="latitude" formControlName="latitude" inputId="locale-user" [maxFractionDigits]="4" class="w-full" />
                             @if (formPollution.get('latitude')?.invalid && isSubmitted) {
-                                <p-message severity="error" variant="simple" size="small" class="col-12 m-0 p-0">Champ requis (nombre)</p-message>
+                                <p-message severity="error" variant="simple" size="small" class="col-12 m-0 p-0">Champ requis (Entre 90° et -90°)</p-message>
                             }  
                         </div>
                     </div>  
@@ -53,7 +53,7 @@
                         <div>
                             <p-inputnumber name="longitude" formControlName="longitude" inputId="locale-user" [maxFractionDigits]="4" class="w-full"/>
                             @if (formPollution.get('longitude')?.invalid && isSubmitted) {
-                                <p-message severity="error" variant="simple" size="small" class="col-12 m-0 p-0">Champ requis (nombre)</p-message>
+                                <p-message severity="error" variant="simple" size="small" class="col-12 m-0 p-0">Champ requis (Entre 90° et -90°)</p-message>
                             }
                         </div>
                     </div>

@@ -48,8 +48,8 @@ export class FormulairePollution {
       typePollution: new FormControl<TypePollution | null>(null, [ Validators.required ]),
       date: new FormControl<Date | null>(null, [ Validators.required ]),
       lieu: new FormControl('', [ Validators.required ]),
-      latitude: new FormControl(0, [ Validators.required, Validators.max(180), Validators.min(-180)]),
-      longitude: new FormControl(0, [ Validators.required, Validators.max(180), Validators.min(-180) ]),
+      latitude: new FormControl<number | null>(null, [ Validators.required, Validators.max(90), Validators.min(-90)]),
+      longitude: new FormControl<number | null>(null, [ Validators.required, Validators.max(90), Validators.min(-90)]),
       photoUrl: new FormControl(''),
   });
 

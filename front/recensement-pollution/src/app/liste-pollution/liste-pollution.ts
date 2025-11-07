@@ -54,7 +54,8 @@ export class ListePollution implements OnInit {
       titre: this.filtreTitre,
       typePollution: this.filtreType,
       lieu: this.filtreLieu
-    });
+    }).pipe(
+      map(pollutions => pollutions.sort((a, b) => a.titre.localeCompare(b.titre))));
   }
 
   resetFiltres() {
