@@ -10,7 +10,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: matteo-renaud/api_tp04_renaud_matteo
+  IMAGE_NAME: matteo-renaud/apitemplate
 
 jobs:
   build-and-publish:
