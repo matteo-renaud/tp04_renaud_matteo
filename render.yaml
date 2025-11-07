@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: angular-node-tp04_renaud_matteo
+    name: angular-node-monorepo
     env: docker
     dockerContext: .
     plan: free
