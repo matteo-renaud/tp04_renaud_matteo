@@ -54,7 +54,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          push: ${{ github.ref == 'refs/heads/api' }}
+          push: ${{ github.ref == 'refs/heads/main' }}
           platforms: linux/amd64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -62,7 +62,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Deploy on render.com
-        if: github.ref == 'refs/heads/api'
+        if: github.ref == 'refs/heads/main'
         env:
           deploy_url: ${{ secrets.API }}
         run: |
